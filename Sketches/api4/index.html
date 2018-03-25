@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <title>audio</title>
+    </head>
+
+
+    <body>
+        <div class="wrapper">
+            <div> Click here to start a waveform:
+                <button onclick="play()">Start/Stop</button>
+            </div>
+            
+            <div>
+                <input onchange="changetype()" type="radio" name="waveform" checked value="sine">
+                Sine <br>
+                <input onchange="changetype()" type="radio" name="waveform" value="sawtooth">
+                Sawtooth <br>
+                <input onchange="changetype()" type="radio" name="waveform" value="triangle">
+                Triangle <br>
+                <input onchange="changetype()" type="radio" name="waveform" value="square">
+                Square <br>
+                <br>
+                
+
+            </div>
+
+            <div>
+                <input id="freqslider" type="range" min="0" max="500" value="250" onchange="changefreq()" name="">
+                <br>
+                Change frequency
+            
+            </div>
+
+
+
+    
+        </div>
+        <script src="script.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
