@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <title>audio</title>
+    </head>
+
+
+    <body>
+        <div class="wrapper">
+                <div class="buttons">
+                    <button class="button" onclick="play();"></button>
+                    <button class="button" onclick="play1();"></button>
+                    <button class="button" onclick="play2();"></button>
+                </div>
+                <div class="buttons">
+                     <input class="bar" id="freqslider" value="250" onchange="changefreq()"  maxlength="3" size="2" min="1" max="1000" type="number" />
+                     <input class="bar" id="freqslider2" value="250" onchange="changefreq1()"  maxlength="3" size="2" min="1" max="1000" type="number" />
+                    <input class="bar" id="freqslider3" value="250" onchange="changefreq2()"  maxlength="3" size="2" min="1" max="1000" type="number" />
+                </div>
+                <div class="buttons">
+                    <p>Form chords by changing frequency of the notes to different tones
+                        <br>
+                            <br>  Example: A Major Chord (440hz, 554.37hz, 659.25hz)
+                            <br>  Example: C Major Chord (261.63hz, 329.63hz, 392.00hz)
+                            <br>  Example: D Major Chord (293.66, 369.99hz, 440.00)</p>
+    
+                </div>
+        </div>
+
+
+        <script src="script.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
